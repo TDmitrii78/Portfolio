@@ -1,0 +1,36 @@
+.social-block {
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: -95px;
+    background-color: white;
+    width: 348px;
+    border-radius: 5px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 338px;
+        height: 24px;
+        margin: 0 auto;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+    &__line {
+        width: 70px;
+        height: 0px;
+        border: 1px solid #000000;
+    }
+    &__link{
+        &:hover {
+            svg path {
+                fill: green;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,15 @@
+.btn {
+    background-color: $base-color;
+    padding: 12px 26px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    text-decoration: none;
+    &_no-color {
+        background-color: transparent;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,115 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 36px;
+    height: 21px;
+    justify-content: space-between;
+    align-items: end;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    span {
+        display: block;
+        background: white;
+        height: 3px;
+        width: 30px;
+        &.long {
+            width: 36px;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    visibility: hidden;
+    transition: all 0.5s;
+    opacity: 0;
+    &_active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+    &__block {
+        position: relative;
+        width: 345px;
+        height: 100vh;
+        background-color: $base-color;
+        padding-top: 140px;
+    }
+    &__overlay {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        opacity: .75;
+    }
+    &__exit {
+        position: absolute;
+        top: 24px;
+        right: 25px;
+        cursor: pointer;
+        &:hover {
+            svg path {
+                fill: red;
+            }
+        }
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        margin-left: 75px;
+        list-style-type: none;
+    } 
+    &__item {
+        position: relative;
+        margin-bottom: 15px;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -35px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000000;
+            border-radius: 100%;
+        }
+        &:hover {
+            &::before {
+                background-color: #FFFFFF;
+                transform: scale(1.5);
+                transition: all 0.3s;
+            }
+            
+        }
+    }
+    &__item-link {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 51px;
+        width: 90px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &__social-link {
+        &:hover {
+            svg path {
+                fill: green;
+            }
+        }
+    }
+}

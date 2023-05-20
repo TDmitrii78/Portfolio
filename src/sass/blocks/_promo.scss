@@ -1,0 +1,23 @@
+.promo {
+    background-image: url('../img/background/first_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    min-height: 100vh;
+    padding-top: 206px;
+    &__subtitle {
+        position: relative;
+        color: white;
+        padding-left: 10px;
+        z-index: 5;
+        @include circle;
+    }
+    &__title {
+        margin-top: 9px;
+        color: white;
+    }
+    &__btns {
+        display: flex;
+        margin-top: 25px;
+    }
+}
