@@ -1,0 +1,24 @@
+.portfolio {
+    padding-top: 126px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include circle;
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, minmax(280px, auto));
+        gap: 5px;
+    }
+}
