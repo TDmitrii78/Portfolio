@@ -2,6 +2,10 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 60px;
+    &_fs14px {
+        font-size: 14px;
+        line-height: 21px;
+    }
     &_fs16px {
         font-size: 16px;
         line-height: 24px;
@@ -9,14 +13,14 @@
             color:white;
         }
     }
+    &_fs20px {
+        font-size: 20px;
+        line-height: 30px;
+    }
     &_fs48px {
         font-size: 48px;
         &_white {
             color:white;
         }
-    }
-    &_fs14px {
-        font-size: 14px;
-        line-height: 21px;
     }
 }

@@ -14,7 +14,7 @@
     width: 1140px;
     margin: 0 auto;
 }
-h1, h2 {
+h1, h2, h3, h4, ul, p {
     margin: 0;
 }
 .divider {
@@ -29,11 +29,11 @@ p {
     line-height: 18px;
 }
 
-
-
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/btn';
 @import 'blocks/menu';
 @import 'blocks/social-block';
 @import 'blocks/about';
+@import 'blocks/experience';
+@import 'blocks/skills';
