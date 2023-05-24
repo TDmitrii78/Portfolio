@@ -81,6 +81,19 @@
                 font-size: 12px;
                 line-height: 18px;
             }
+            &:hover {
+                .experience__list-item-icons {
+                    &::before {
+                        transition: all 1s;
+                        transform: scale(2);
+                        left: 17px;
+                    }
+                }
+                p {
+                    transition: all 1s;
+                    transform: scale(1.1);
+                }
+            }
         }
     }
 }

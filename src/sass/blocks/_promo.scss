@@ -10,7 +10,7 @@
         color: white;
         padding-left: 10px;
         z-index: 5;
-        @include circle;
+        @include circle-pulse;
     }
     &__title {
         margin-top: 9px;

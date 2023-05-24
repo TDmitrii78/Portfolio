@@ -3,6 +3,7 @@
 
 @import 'base/variable';
 @import 'base/mixin';
+@import 'base/animation';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -28,6 +29,12 @@ p {
     font-size: 12px;
     line-height: 18px;
 }
+body {
+    background-color: white;
+}
+.night {
+    filter: invert(10%);
+}
 
 @import 'blocks/promo';
 @import 'blocks/title';
@@ -38,3 +45,6 @@ p {
 @import 'blocks/experience';
 @import 'blocks/skills';
 @import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';
+@import 'blocks/back-btn';

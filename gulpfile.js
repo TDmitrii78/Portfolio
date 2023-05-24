@@ -12,7 +12,10 @@ gulp.task('server', function() {
     browserSync.init({
         server: {
             baseDir: "dist"
-        }
+        },
+        online: true,
+        tunnel: true,
+        logLevel: "debug"
     });
     gulp.watch('src/*.html').on('change', browserSync.reload);
 });
@@ -71,4 +74,11 @@ gulp.task('images', function() {
 
 });
 
-gulp.task('default', gulp.parallel('watch', 'styles', 'server', 'html', 'scripts', 'fonts', 'icons', 'images'));
+gulp.task('mailer', function() {
+    return gulp.src('src/mailer/**/*.*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/mailer'))
+        .pipe(browserSync.stream());
+
+});
+gulp.task('default', gulp.parallel('watch', 'mailer', 'styles', 'server', 'html', 'scripts', 'fonts', 'icons', 'images'));

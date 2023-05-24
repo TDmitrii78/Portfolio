@@ -1,0 +1,9 @@
+@keyframes pulse {
+    from {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    to {transform: scale(1);}
+}
+@keyframes size {
+    from {width: 10%;}
+    to {width: 70%;}
+}
