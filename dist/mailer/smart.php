@@ -1,25 +1,25 @@
 <?php 
 
 $name = $_POST['name'];
-$email = $_POST['email'];
 $text = $_POST['text'];
+$email = $_POST['email'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
-// $mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.yandex.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'dtkachoff@yandex.ru';                 // Наш логин
-$mail->Password = 'jtakcqrfungongyt';                           // Наш пароль от ящика
+$mail->Username = 'DTpool';                 // Наш логин
+$mail->Password = 'ahnikfytyrxtidwj';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('dtkachoff@yandex.ru', 'portfolio');   // От кого письмо 
-$mail->addAddress('mailtkachov@gmail.com');     // Add a recipient
+$mail->setFrom('DTpool@yandex.ru', 'Pulse');   // От кого письмо 
+$mail->addAddress('');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -32,7 +32,7 @@ $mail->Subject = 'Данные';
 $mail->Body    = '
 		Пользователь оставил данные <br> 
 	Имя: ' . $name . ' <br>
-	Текст: ' . $text . '<br>
+	Номер телефона: ' . $text . '<br>
 	E-mail: ' . $email . '';
 
 if(!$mail->send()) {

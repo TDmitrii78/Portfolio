@@ -1,0 +1,31 @@
+@media (max-width: 1350px) {
+    .social-block {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 951px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 727px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 536px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}
+

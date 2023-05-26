@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+    .menu {
+        &__block {
+            width: 250px;
+        }
+        &__list {
+            margin-left: 55px;
+        }
+    }
+
+    .hamburger {
+        right: 20px;
+    }
+
+}

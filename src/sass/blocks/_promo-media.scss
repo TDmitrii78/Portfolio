@@ -1,0 +1,20 @@
+@media (max-width: 991px) {
+    .promo__title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        background-position: 57%;
+        &__title {
+            font-size: 26px;
+            line-height: 39px;
+        }
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+}
+
