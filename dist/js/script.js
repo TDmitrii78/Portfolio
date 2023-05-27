@@ -19,16 +19,6 @@ window.onscroll = () => {
     }
 } 
 
-const body = document.querySelector('body');
-const date = new Date();
-const time = date.getHours();
-if ((time > 22) || (time < 6)) {
-    body.classList.add('night');
-} else {
-    body.classList.remove('night');
-}
-
-
 $('form').submit(function(e) {
     e.preventDefault();
     // if (!$(this).valid()) {

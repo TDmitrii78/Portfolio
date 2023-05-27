@@ -32,9 +32,6 @@ p {
 body {
     background-color: white;
 }
-.night {
-    filter: invert(10%);
-}
 
 @import 'blocks/promo';
 @import 'blocks/title';
