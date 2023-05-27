@@ -1,6 +1,6 @@
 .experience {
-    margin-top: 126px;
-    &__title {
+    padding-top: 126px;
+     &__title {
         text-align: center;
         position: relative;
         @include circle;
@@ -13,10 +13,11 @@
         text-align: center;
     }
     &__wrapper {
+        margin: 0 71px;
         display: grid;
         margin-top: 60px;
         grid-template-columns: repeat(2, 420px);
-        column-gap: 143px;
+        justify-content: space-between;
     }
     &__column-title {
         padding-left: 43px;

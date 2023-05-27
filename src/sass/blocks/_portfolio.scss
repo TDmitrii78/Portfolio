@@ -21,8 +21,8 @@
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(4, 280px);
-        grid-template-rows: repeat(2, minmax(280px, auto));
-        grid-auto-rows: minmax(280px, auto);
+        grid-template-rows: repeat(2, 280px);
+        grid-auto-rows: 280px;
         gap: 5px;
     }
     &__item {

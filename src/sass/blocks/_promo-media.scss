@@ -1,7 +1,9 @@
 @media (max-width: 991px) {
-    .promo__title {
-        font-size: 36px;
-        line-height: 42px;
+    .promo {
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+        }
     }
 }
 

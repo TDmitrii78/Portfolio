@@ -1,0 +1,26 @@
+@media (max-width: 991px) {
+    .skills {
+        padding-top: 46px;
+        padding-bottom: 23px;
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__rating {
+            margin-top: 48px;
+            grid-template-columns: repeat(auto-fit, 536px);
+        }
+        &__subtitle {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .skills {
+        &__rating {
+            grid-template-columns: repeat(auto-fit, 300px);
+        }
+    }
+}

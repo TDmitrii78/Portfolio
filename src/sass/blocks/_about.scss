@@ -46,7 +46,7 @@
         display: grid;
         grid-template-columns: repeat(2, 260px);
         grid-template-rows: repeat(2, minmax(120px, auto));
-        grid-auto-rows: minmax(120px, auto);
+        grid-auto-rows: auto;
         column-gap: 50px;
         row-gap: 20px;
     }

@@ -1,0 +1,28 @@
+@media (max-width: 1199px) {
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+        }
+        &__item {
+            &_vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .portfolio {
+        padding-top: 24px;
+        padding-bottom: 23px;
+        &__subtitle {
+            margin-top: 26px;
+            font-size: 24px;
+            line-height: 36px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+}
