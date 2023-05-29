@@ -67,14 +67,5 @@
         &-text {
             margin-top: 6px;
         }
-        &:hover {
-            .about__skill-icon {
-                &::before {
-                    transition: all 1s;
-                    transform: scale(3);
-                }
-            }
-        }
-        
     }
 }
