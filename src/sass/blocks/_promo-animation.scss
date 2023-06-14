@@ -1,0 +1,7 @@
+.promo {
+    &__title {
+        animation-name: animateSkew;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}

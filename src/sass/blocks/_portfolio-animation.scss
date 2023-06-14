@@ -1,0 +1,11 @@
+.portfolio {
+    &__item {
+        transition: all 1s;
+        opacity: 0;
+        transform: translateY(100%);
+        &_animation {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

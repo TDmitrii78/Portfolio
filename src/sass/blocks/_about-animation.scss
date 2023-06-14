@@ -1,0 +1,11 @@
+.about {
+    &__skill {
+        transition: all 1s;
+        transform: translateY(100%);
+        opacity: 0;
+        &_animation {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

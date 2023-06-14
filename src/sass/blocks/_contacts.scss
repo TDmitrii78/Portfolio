@@ -25,9 +25,6 @@
     }
     &__divider {
         margin: 0;
-        animation-name: size;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
     }
     &__dscr {
         margin-top: 20px;
@@ -102,5 +99,4 @@
     &__button {
         border: none;
     }
-    
 }

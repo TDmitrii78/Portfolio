@@ -3,7 +3,11 @@
     50% {transform: scale(1.2);}
     to {transform: scale(1);}
 }
-@keyframes size {
-    from {width: 10%;}
-    to {width: 70%;}
+@keyframes animateSkew {
+    from {transform: translateX(-100%); opacity: 0;}
+    50% {transform: translateX(0); opacity: 1;}
+    70% {transform: translateX(1%) skewX(-15deg);}
+    90% {transform: translateX(-1%) skewX(15deg);}
+    to {transform: skewX(0);}
 }
+

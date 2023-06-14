@@ -24,5 +24,11 @@
         &__wrapper {
             margin-top: 40px;
         }
+        &__item {
+            &:hover {
+                transform: none;
+                filter: none;
+            }
+        }
     }
 }
