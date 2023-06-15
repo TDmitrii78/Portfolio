@@ -18,7 +18,7 @@ exit();
 
 function back() {
     const back = document.querySelector('#back');
-    window.onscroll = () => {
+    return function start() {
         let currentY = window.pageYOffset;
         if (currentY > 1000) {
             back.classList.add('back-btn_active');
@@ -27,7 +27,7 @@ function back() {
         }
     } 
 }
-back();
+const backTop = back();
 
 function raiting() {
     const skillsRating = document.querySelectorAll('.skills__rating-item-value');
@@ -174,4 +174,5 @@ const animation = animationElement([
 
 window.onscroll = () => {
     animation();
+    backTop();
 }
