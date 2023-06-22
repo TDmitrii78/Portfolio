@@ -1,3 +1,4 @@
+'use strict';
 function openMenu() {
     const menu = document.querySelector('.menu');
     const hamburger = document.querySelector('.hamburger');
@@ -85,7 +86,7 @@ function animationElement(settingArrey) {
         const track = (trackElement) ? document.querySelector(`${(trackElement)}`) : false; 
         const allAnimateElement = document.querySelectorAll(`${animateElements}`);
         const arr = [];
-        for (el of allAnimateElement) {
+        for (let el of allAnimateElement) {
             arr.push(new Element(track, el, activClass, disableClass, enableClass, startDelay, delayBetweenElement, ratio, sensivityOffset, cycleAnimation));
         }
         startupEnableClass(arr, enableClass);
@@ -95,7 +96,7 @@ function animationElement(settingArrey) {
 
     const arrObjElement = [];
 
-    for (item of settingArrey) {
+    for (let item of settingArrey) {
         arrObjElement.push(createElement(...item));
     }
 
@@ -158,7 +159,7 @@ function animationElement(settingArrey) {
     let delay = 0;
     
     return function start() {
-        for (item of arrObjElement) {
+        for (let item of arrObjElement) {
             baseLogic(item);
         }
     }
